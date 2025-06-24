@@ -52,10 +52,9 @@ A Java-based project that simulates a real-world friend suggestion engine using 
 
 ## 📁 How to Run
 
-### 1. Compile and Launch GUI:
-
+#### 1. GUI Version:
 ```bash
-javac *.java
+javac UI.java SocialGraph.java RecommendationEngine.java
 java UI
 ```
 
@@ -64,13 +63,6 @@ java UI
 ```bash
 javac Main.java SocialGraph.java RecommendationEngine.java
 java Main
-```
-
-### 3.To run the GUI::
-
-```bash
-javac UI.java SocialGraph.java RecommendationEngine.java
-java UI
 ```
 
 ---
