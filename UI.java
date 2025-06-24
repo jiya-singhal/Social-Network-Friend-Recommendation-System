@@ -4,7 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.FlowLayout;
 import java.awt.Font;
-import java.awt.Color;  
+import java.awt.Color;
 import java.awt.event.*;
 import java.util.*;
 
@@ -78,10 +78,13 @@ public class UI extends JFrame {
         JPanel toolsPanel = createTitledPanel("📊 Graph Tools");
         JButton showGraphBtn = new JButton("Show Graph 🌐");
         JButton showCirclesBtn = new JButton("Friend Circles 🔄");
+        JButton showUsersBtn = new JButton("All Users 👥"); // ✅ New Button
         styleButton(showGraphBtn);
         styleButton(showCirclesBtn);
+        styleButton(showUsersBtn); // ✅ Style it
         toolsPanel.add(showGraphBtn);
         toolsPanel.add(showCirclesBtn);
+        toolsPanel.add(showUsersBtn); // ✅ Add to panel
 
         inputPanel.add(addUserPanel);
         inputPanel.add(addFriendshipPanel);
@@ -99,7 +102,7 @@ public class UI extends JFrame {
         add(inputPanel, BorderLayout.NORTH);
         add(scrollPane, BorderLayout.CENTER);
 
-        // Actions
+        // 🧠 Actions
         addUserBtn.addActionListener(e -> {
             String user = userField.getText().trim().toLowerCase();
             if (!user.isEmpty()) {
@@ -156,6 +159,14 @@ public class UI extends JFrame {
             int id = 1;
             for (List<String> group : circles) {
                 outputArea.append("🔄 Circle " + id++ + ": " + group + "\n");
+            }
+        });
+
+        // ✅ Show All Users Action
+        showUsersBtn.addActionListener(e -> {
+            outputArea.append("👥 All Users:\n");
+            for (String user : graph.getAllUsers()) {
+                outputArea.append("- " + user + "\n");
             }
         });
 

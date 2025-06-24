@@ -45,8 +45,8 @@ A Java-based project that simulates a real-world friend suggestion engine using 
 
 ## 🌐 Demo Video & Screenshots
 
-> 🎥 [Watch the Demo Video](https://your-demo-link.com)  
-> 🖼️ [View GUI Screenshot](./screenshots/fancy-ui.png)
+> 🎥 [Watch the Demo Video](https://www.loom.com/share/7c7a9f7ef7104846a8b1d06787e56b1b?sid=fcc6c268-518c-477a-9a80-25a8adffdd10)  
+> 🖼️ [View GUI Screenshot](./Uiscreenshot.png)
 
 ---
 
