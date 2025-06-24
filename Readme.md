@@ -21,15 +21,6 @@ A Java-based project that simulates a real-world friend suggestion engine using 
 
 ## 📊 Graph Concepts Used
 
-<<<<<<< HEAD
-| Graph Concept            | Purpose                                        |
-|--------------------------|------------------------------------------------|
-| **Adjacency List**       | Store users and friendships efficiently        |
-| **Breadth-First Search** | Recommend friends (2-hop neighbors)            |
-| **Depth-First Search**   | Detect connected components (friend circles)   |
-| **HashMap & HashSet**    | Fast user lookup, friendship, and block logic |
-| **Sorting**              | Sort recommendations by mutuals, alphabetically |
-=======
 | Graph Concept            | Purpose                                             |
 |--------------------------|-----------------------------------------------------|
 | **Adjacency List**       | Store users and friendships efficiently             |
@@ -37,21 +28,11 @@ A Java-based project that simulates a real-world friend suggestion engine using 
 | **Disjoint Set Union**   | Detect friend circles (connected components)        |
 | **HashMap & HashSet**    | Fast user lookup, friendship & blocking operations  |
 | **Sorting**              | Sort suggestions by mutual friends & names          |
->>>>>>> fa8ea3f (Implementing DSU)
 
 ---
 
 ## 🚀 Advanced Features
 
-<<<<<<< HEAD
-- 🔤 **Case-insensitive input handling**
-- 🧍‍🤝‍🧍 **Mutual Friend Detection with Names**
-- 📶 **Sorted Suggestions** — By mutual friends count & then by name
-- ⛔ **Block Users** — Blocked users are excluded from recommendations
-- 🌐 **Friend Circles** — Community detection using DFS
-- 📋 **Social Graph Viewer** — View entire graph adjacency list
-- 🎨 **Fancy GUI Styling** — Colors, emojis & button grouping
-=======
 - 🔤 **Case-insensitive Input Handling**
 - 🧍‍🤝‍🧍 **Mutual Friend Detection with Names**
 - 📶 **Sorted Suggestions** — By number of mutual friends, then alphabetically
@@ -59,9 +40,9 @@ A Java-based project that simulates a real-world friend suggestion engine using 
 - 🧩 **Friend Circle Detection using DSU** — Cluster friends into communities
 - 📋 **Graph Viewer** — Prints complete adjacency list of all users
 - 🎨 **Styled Swing GUI** — Fancy layout, emoji-labeled sections, user-friendly
->>>>>>> fa8ea3f (Implementing DSU)
 
 ---
+
 ## 🌐 Demo Video & Screenshots
 
 > 🎥 [Watch the Demo Video](https://your-demo-link.com)  
