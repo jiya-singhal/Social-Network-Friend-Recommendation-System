@@ -20,29 +20,29 @@ A Java-based project that simulates a real-world friend suggestion engine using 
 
 ---
 
-## 🔮 Graph Concepts Used
+## 📊 Graph Concepts Used
 
-| Concept                  | Purpose                                     |
-| ------------------------ | ------------------------------------------- |
-| **Adjacency List**       | Store users and their friends (graph edges) |
-| **Breadth-First Search** | Recommend friends via 2-level traversal     |
-| **Connected Components** | Detect friend circles using DFS             |
-| **HashMap & HashSet**    | Efficient user/block tracking               |
-| **Sorting Algorithms**   | Prioritize friend recommendations           |
+| Graph Concept            | Purpose                                        |
+|--------------------------|------------------------------------------------|
+| **Adjacency List**       | Store users and friendships efficiently        |
+| **Breadth-First Search** | Recommend friends (2-hop neighbors)            |
+| **Depth-First Search**   | Detect connected components (friend circles)   |
+| **HashMap & HashSet**    | Fast user lookup, friendship, and block logic |
+| **Sorting**              | Sort recommendations by mutuals, alphabetically |
 
 ---
 
 ## 🚀 Advanced Features
 
-* ✅ **Case-insensitive Inputs** — All user inputs are normalized
-* ✅ **Mutual Friend Detection** — Lists common friends by name
-* ✅ **Sorted Suggestions** — First by number of mutuals, then alphabetically
-* ✅ **Block Users** — Bidirectional exclusion from suggestions
-* ✅ **Friend Circle Detection** — DFS to find connected clusters
-* ✅ **Graph Print** — Displays full social graph (adjacency list)
+- 🔤 **Case-insensitive input handling**
+- 🧍‍🤝‍🧍 **Mutual Friend Detection with Names**
+- 📶 **Sorted Suggestions** — By mutual friends count & then by name
+- ⛔ **Block Users** — Blocked users are excluded from recommendations
+- 🌐 **Friend Circles** — Community detection using DFS
+- 📋 **Social Graph Viewer** — View entire graph adjacency list
+- 🎨 **Fancy GUI Styling** — Colors, emojis & button grouping
 
 ---
-
 ## 🌐 Demo Video & Screenshots
 
 > [🎥 Watch the Demo Video](https://your-demo-link.com)
