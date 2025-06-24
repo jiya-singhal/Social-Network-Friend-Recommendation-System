@@ -7,6 +7,7 @@ public class RecommendationEngine {
         this.graph = graph;
     }
 
+    // Recommend friends based on mutual friends (BFS up to level 2)
     public Map<String, List<String>> recommendFriends(String user) {
         user = user.toLowerCase();
         Map<String, List<String>> mutualMap = new HashMap<>();
@@ -49,28 +50,9 @@ public class RecommendationEngine {
         return mutualMap;
     }
 
+    // Use DSU to find friend circles
     public List<List<String>> findFriendCircles() {
-        Set<String> visited = new HashSet<>();
-        List<List<String>> components = new ArrayList<>();
-
-        for (String user : graph.getAllUsers()) {
-            if (!visited.contains(user)) {
-                List<String> component = new ArrayList<>();
-                dfs(user, visited, component);
-                components.add(component);
-            }
-        }
-
-        return components;
-    }
-
-    private void dfs(String user, Set<String> visited, List<String> component) {
-        visited.add(user);
-        component.add(user);
-        for (String friend : graph.getFriends(user)) {
-            if (!visited.contains(friend)) {
-                dfs(friend, visited, component);
-            }
-        }
+        Map<String, List<String>> groups = graph.getFriendCirclesDSU();
+        return new ArrayList<>(groups.values());
     }
 }
